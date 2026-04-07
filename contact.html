@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="smartkid.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="smartkid.jpg">
+    <title>CONTACT</title>
+</head>
+<body>
+            <!--------header file-->
+<header id="heading">
+ <div id="logo">
+    <a href="index.html">
+        <img  src="smartkid.jpg" alt="Logo">
+    </a>
+  </div>
+    <nav id="contols">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="services.html">SERVICES</a>
+        <a href="mytask.html">MY TASK</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+</header>
+
+
+<div id="rows">
+        <div id="right-row">
+            <h1 id="tab-titles1">CONTACT</h1>
+        </div>
+
+    </div>
+
+    <section class="contact-details">
+    <div>
+        <h1>Contact Information</h1>
+    </div>
+    <div>
+        <img id="Ambrose-passport" src="smartkid.jpg" alt="">
+        <h4>NAME:</h4>
+        <h5>AMBROSE MUTINDA</h5>
+    </div>
+    <div>
+        <img src="gmail.jpg.png" alt=""style="width: 40px; height: 40px;">
+        <h4>Email:</h4>
+        <h6>www.ambrosedhasmartkid@gmail.com</h6>
+    </div>
+    <div>
+        <img src="phone.icon.jpg" alt=""style="width: 40px; height: 40px;">
+        <h4>Tel:</h4>
+        <h6>+254741241969</h6>
+    </div>
+    <div id="whatapp-button">
+        <a href="https://wa.me/message/M42DZK4KZZZIF1">Message Me.</a> <br>
+        <img src="whatsapp2.jpg" alt=""style="width: 40px; height: 40px;">
+        <a href="https://wa.me/message/M42DZK4KZZZIF1"><button style="width: 80px; height: 25px; font-size: 12px;">what'sapp</button></a>
+        
+
+    </div><br>
+
+    <div id="rows">
+        <div id="right-row">
+            <h2 id="tab-titles1">MESSAGE ME</h2>
+        </div><br>
+       <?php
+// 1️⃣ PHP: Connect to database (server-side communication)
+$conn = mysqli_connect("localhost", "root", "", "mydatabase");
+
+// 2️⃣ Handle form submission (HTTP POST request)
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'];         // client sends data
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+
+    // SQL: store data in database (server-side storage)
+    $sql = "INSERT INTO contacts (name, email, message) VALUES ('$name', '$email', '$message')";
+    mysqli_query($conn, $sql);
+
+    $status = "Message sent successfully!";
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Me</title>
+    <!-- 3️⃣ CSS: styling -->
+    <style>
+        body { font-family: Arial; background: #f2f2f2; }
+        form { width: 400px; margin: auto; padding: 20px; background: white; border-radius: 10px; }
+        input, textarea, button { width: 90%; margin: 15px 0; padding: 10px; }
+        h2 { text-align: center; }
+        p.status { color: green; text-align: center; }
+    </style>
+</head>
+<body>
+
+<!-- 4️⃣ HTML: form (client-side) -->
+<form method="POST" action="">
+    <h2>Contact Me</h2>
+
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+
+    <!-- Display server response (HTTP response) -->
+    
+</form>
+
+</body>
+</html>
+</br>  
+    
+
+    </section>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Font Awesome (for icons) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<title>Contact Section</title>
+
+<style>
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: black;
+}
+
+/* Social icons */
+.social-icons {
+    margin-top: 50px;
+}
+
+.social-icons a {
+    color: #ccc;
+    font-size: 30px;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff004f;
+}
+
+/* Download button */
+.btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 15px 40px;
+    background: #ff004f;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e60045;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Social Icons -->
+<div class="social-icons">
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-x-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+</div>
+
+<!-- Download Button -->
+<a href="Ambrose CV.pdf" download class="btn">Download CV</a>
+
+
+
+
+
+    <div  id="Prev-button-contact">
+        <a href="mytask.html"> <button style="width: 60px; height: 25px; font-size: 12px; nav-left;">Prev</button></a>
+    </div>
+    
+
+    
+
+
+<footer>
+ <div class="footer">
+  <div id="logo">
+        <img  src="smartkid.jpg" alt="Logo">
+  </div>
+    <div id="socials">
+        <a href="https://wa.me/message/M42DZK4KZZZIF1"><img src="whatsapp2.jpg" alt="whatsapp icon"style="width: 40px; height: 40px;"></a>
+        <p>whatsapp</p>
+        <a href="mailto:www.ambrosedhasmartkid@gmail.com"><img src="gmail.jpg.png" alt="Gmail icon"style="width: 40px; height: 40px;"></a>
+        <P>G-mail</P>
+        <a href="tel:+254741241969"><img src="phone.icon.jpg" alt="phone icon"style="width: 40px; height: 40px;"></a>
+        <p>Phone</p>
+       
+    </div>
+  </div>
+    <div id="copyright-message">
+        <p>Created By Ambrose Mutinda | © 2026 All Rights Reserved</p>
+    </div>
+</footer>
+    
+</body>
+
+</html>

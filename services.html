@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="smartkid.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="smartkid.jpg">
+    <title>services</title>
+</head>
+<body>
+            <!--------header file-->
+<header id="heading">
+ <div id="logo">
+    <a href="index.html">
+        <img  src="smartkid.jpg" alt="Logo">
+    </a>
+  </div>
+    <nav id="contols">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="services.html">SERVICES</a>
+        <a href="mytask.html">MY TASK</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+</header>
+
+<div id="rows">
+        <div id="right-row">
+            <h1 id="tab-titles1">SERVICES</h1>
+        </div>
+
+    </div>
+
+
+    <div id="content1">
+        <h3>With my diverse skill set in programming, web development, networking, and cybersecurity, <br> I am well-equipped to offer a wide range of technology services tailored to both individuals and businesses. </h3>
+    </div>
+
+
+<div id="rows">
+        <div id="right-row">
+            <h2 id="tab-titles1">REGISTRATION FORM</h2>
+        </div>
+
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Register Form</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 300px;
+            margin: 50px auto;
+            background: #dcd6f7;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Register</h2>
+
+    <form onsubmit="return validateForm()">
+        <label>Username:</label>
+        <input type="text" id="username">
+        <div id="userError" class="error"></div>
+
+        <label>Email:</label>
+        <input type="text" id="email">
+        <div id="emailError" class="error"></div>
+
+        <label>Password:</label>
+        <input type="password" id="password">
+        <div id="passError" class="error"></div>
+
+        <label>Confirm Password:</label>
+        <input type="password" id="confirmPassword">
+        <div id="confirmError" class="error"></div>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+<script>
+function validateForm() {
+    let username = document.getElementById("username").value;
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+    let confirmPassword = document.getElementById("confirmPassword").value;
+
+    let valid = true;
+
+    // Username validation
+    if (username === "") {
+        document.getElementById("userError").innerText = "Username is required";
+        valid = false;
+    } else {
+        document.getElementById("userError").innerText = "";
+    }
+
+    // Email validation
+    let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if (!email.match(emailPattern)) {
+        document.getElementById("emailError").innerText = "Enter a valid email";
+        valid = false;
+    } else {
+        document.getElementById("emailError").innerText = "";
+    }
+
+    // Password validation
+    if (password.length < 6) {
+        document.getElementById("passError").innerText = "Password must be at least 6 characters";
+        valid = false;
+    } else {
+        document.getElementById("passError").innerText = "";
+    }
+
+    // Confirm password validation
+    if (password !== confirmPassword) {
+        document.getElementById("confirmError").innerText = "Passwords do not match";
+        valid = false;
+    } else {
+        document.getElementById("confirmError").innerText = "";
+    }
+
+    return valid;
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+    <div class="buttons">
+        <a href="about.html" id="Prev-button"> <button>Prev</button></a>
+        <a href="mywork.html" id="next-button"> <button>Next</button></a>
+    </div>
+
+
+
+<footer>
+ <div class="footer">
+  <div id="logo">
+        <img  src="Mega.jpeg" alt="Logo">
+  </div>
+    <div id="socials">
+        <a href="https://wa.me/message/M42DZK4KZZZIF1"><img src="whatsapp2.jpg" alt="whatsapp icon"style="width: 40px; height: 40px;"></a>
+        <p>whatsapp</p>
+        <a href="mailto:www.ambrosedhasmartkid@gmail.com"><img src="gmail.jpg.png" alt="Gmail icon"style="width: 40px; height: 40px;"></a>
+        <P>G-mail</P>
+        <a href="tel:+254741241969"><img src="phone.icon.jpg" alt="phone icon"style="width: 40px; height: 40px;"></a>
+        <p>Phone</p>
+       
+    </div>
+  </div>
+    <div id="copyright-message">
+        <p>@ Ambrosesmartkid |All right reserved|2024 |copyright|Privacy policy</p>
+    </div>
+</footer>
+    
+</body>
+
+</html>
